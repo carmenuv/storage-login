@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Storage</title>
+  <link rel="stylesheet" href="./index.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="body">
+
+  <section class="login">
+    <div class="login__bg-color login__bg-color--primero"></div>
+    <div class="login__bg-color login__bg-color--segundo"></div>
+    <div class="login__bg-color login__bg-color--tercero"></div>
+    <section class="login__container-box" id="section-login">
+      <div class="login__container">
+        <form class="login__form" action="">
+          <h1 class="login__form-title">LOGIN</h1>
+          <div class="login__input-container">
+            <input class="login__input" type="text" name="email" placeholder="Ingrese su correo">
+          </div>
+          <div class="login__input-container">
+            <input class="login__input" type="password" name="password" placeholder="Ingrese su contraseña">
+          </div>
+          <div class="login__button-container">
+            <button class="login__button" class="form__button" id="btn-login" type="submit">Inicia Sesión</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="logged__container" id="usuario-logged">
+      <h2 class="logged__title">Tu email:</h2>
+      <h1 class="logged__texto" id="email"></h1>
+      <h2 class="logged__title">Tu contraseña:</h2>
+      <h4 class="logged__texto" id="password"></h4>
+      <button class="login__button" id="cerrar-sesion">cerrar sesión</button>
+    </section>
+    
+  </section>
+  
+  <script src="./localstorage.js"></script>
+</body>
+</html>
